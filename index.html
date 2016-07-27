@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum=1,user-scalable=no">
+		<title>吴明伟简历</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<!--还需要把fonts文件夹放到同一级别的文件里-->
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			body,
+			html {
+				font-size: 1em;
+				color: darkslategray;
+				width: 100vw;
+				height: 100vh;
+			}
+			
+			.wrap {
+				position: relative;
+				width: 100vw;
+				height: 100vh;
+				margin: 0 auto;
+				background-color: white;
+				
+			}
+			
+			#personal {
+				position: absolute;
+				top: 3%;
+				
+				font-size: 2rem;
+				text-align: center;
+				color: #000000;
+				width: 100vw;
+				text-align: center;
+			}
+			
+			#name {
+				position: absolute;
+				width: 40vw;
+				left: 5%;
+				top: 22%;
+				font-size: 1.1rem;
+			}
+			
+			#name>li {
+				border-bottom: 2px dashed cornflowerblue;
+				line-height: 5vh;
+				list-style: none;
+			}
+			
+			#photo>img {
+				position: absolute;
+				right: 10%;
+				top: 16%;
+				width: 25vw;
+			}
+			#information{
+				position: absolute;
+				top: 15%;
+				left: 0%;
+				/*font-size: 1.8rem;*/
+				color: #000000;
+			}
+		</style>
+		
+		
+	</head>
+
+	<body>
+		<div class="wrap">
+			<h1 id="personal" class="animated bounceIn">
+				这是一份简历
+			</h1>
+
+			<h3 id="information">
+				个人资料:
+			</h3>
+			<ul id="name" class="animated bounceInLeft">
+				<li> <span class="glyphicon glyphicon-user"></span> 姓名/Name:吴明伟</li>
+				<li> <span class="glyphicon glyphicon-arrow-right"></span> 性别/Sex:男</li>
+				<li> <span class="glyphicon glyphicon-hand-right"></span> 年龄/Age:29岁</li>
+				<li> <span class="glyphicon glyphicon-map-marker"></span> 籍贯:黑龙江哈尔滨</li>
+				<li> <span class="glyphicon glyphicon-phone"></span> 电话:15317633591/18088748748</li>
+				<li> <span class="glyphicon glyphicon-envelope"></span> 邮箱:18088748748@163.com</li>
+				<li>新浪微博:Mydream16888</li>
+				<li><img src="img/font-524.png"/>QQ/微信:653123923</li>
+				<li>新浪博客:</li>
+				<li>GitHub:</li>
+				<li>个人微信公众号:</li>
+				<li>个人微信公众测试号:</li>
+
+			</ul>
+			<div id="photo">
+				<img src="img/img/myself.jpg" class="animated bounceInRight" />
+			</div>
+			<!--<h3 id="job">
+				工作经验:
+			</h3>-->
+
+		</div>
+	</body>
+
+</html>
