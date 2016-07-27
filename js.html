@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#wrap {
+				position: relative;
+				width: 500px;
+				height: 500px;
+				background-color: #ccc;
+				border-radius: 250px;
+				background-color: #FFE4C4;
+				background-image: -webkit-linear-gradient(top,#eee 0px,#aaa 50%,#666 100%);
+			}
+			
+			#div1 {
+				position: absolute;
+				width: 460px;
+				height: 460px;
+				border-radius: 230px;
+				background-color: white;
+				top: 20px;
+				left: 20px;
+			}
+			
+			#hour {
+				width: 10px;
+				height: 100px;
+				background-color: red;
+				position: absolute;
+				top: 120px;
+				left: 225px;
+				transform-origin: bottom;
+			}
+			
+			#minute {
+				width: 10px;
+				height: 150px;
+				background-color: yellow;
+				position: absolute;
+				top: 70px;
+				left: 225px;
+				transform-origin: bottom;
+			}
+			
+			#second {
+				width: 10px;
+				height: 200px;
+				background-color: black;
+				position: absolute;
+				top: 20px;
+				left: 225px;
+				transform-origin: bottom;
+			}
+			
+			#ul1 {
+				position: absolute;
+				top: 0;
+				left: 30px;
+				list-style: none;
+			}
+			
+			#ul1>li {
+				font-size: 30px;
+				position: absolute;
+				width: 400px;
+				top: 210px;
+			}
+			#ul1 span{
+					width: 10px;
+					height: 10px;
+					display: block;
+					color: darkmagenta;
+					font-size: 20px;
+				}
+		</style>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<div id="div1">
+				<div id="hour">
+
+				</div>
+				<div id="minute">
+
+				</div>
+				<div id="second">
+
+				</div>
+				<ul id="ul1">
+					<li><span>9</span></li>
+					<li><span>10</span></li>
+					<li><span>11</span></li>
+					<li><span>12</span></li>
+					<li><span>1</span></li>
+					<li><span>2</span></li>
+					<li><span>3</span></li>
+					<li><span>4</span></li>
+					<li><span>5</span></li>
+					<li><span>6</span></li>
+					<li><span>7</span></li>
+					<li><span>8</span></li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		var ul1 = document.getElementById("ul1");
+		var hour = document.getElementById("hour");
+		var minute = document.getElementById("minute");
+		var second = document.getElementById("second");
+		lis = ul1.children;
+//		var lis=document.querySelectorAll("#ul1 li");
+		var spans=document.querySelectorAll("#ul1 span");
+		
+		for (var i = 0; i < lis.length; i++) {
+			var a = i * 30;
+			lis[i].style.transform = "rotate(" + a + "deg)";
+			spans[i].style.transform="rotate("+"-"+a+"deg)";
+		}
+		
+		setInterval(function() {
+		var date1 = new Date();
+		var hour1 = date1.getHours();
+		var minute1 = date1.getMinutes();
+		var second1 = date1.getSeconds();
+		var Hhour = (hour1 + (minute1 / 60) + second1 / 3600) * 30;
+		var Hminute = (minute1 + second1 / 60) * 6;
+		var Hsecond = second1 * 6;
+			hour.style.transform = "rotate(" + Hhour + "deg)";
+			minute.style.transform = "rotate(" + Hminute + "deg)";
+			second.style.transform = "rotate(" + Hsecond + "deg)";
+		}, 1000);
+	</script>
+
+</html>
