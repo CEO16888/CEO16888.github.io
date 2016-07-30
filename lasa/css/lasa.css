@@ -1,0 +1,54 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#lasa li{
+	float: left;
+    
+    }
+    a{
+    	text-decoration: none;
+    }
+.lasa1{
+	width: 100px;
+	height: 534px;
+	background-image: url(../img/lasa04.jpg);
+}
+.lasa2{
+	width: 100px;
+	height: 534px;
+	background-image: url(../img/lasa03.jpg);
+}
+.lasa3{
+	width: 100px;
+	height: 534px;
+	background-image: url(../img/lasa02.jpg);
+}
+.lasa4{
+	width: 800px;
+	height: 534px;
+	background-image: url(../img/lasa01.jpg);
+}
+.dcon{
+	width: 100px;
+	height: 534px;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+}
+.dcon p{
+	float: left;
+}
+.p1{
+	width: 12px;
+	font-size: 12px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.p2{
+	width: 14px;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-left: 20px;
+	
+}
