@@ -1,0 +1,85 @@
+* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			body,
+			html {
+				font-size: 1em;
+				
+				width: 100vw;
+				height: 100vh;
+				background-color: black;
+				color: crimson;
+			}
+			
+			.wrap {
+				position: relative;
+				width: 100vw;
+				height: 100vh;
+				margin: 0 auto;
+				/*background-color: darkolivegreen;*/
+			}
+			
+			#personal {
+				position: absolute;
+				top: 3%;
+				font-size: 2rem;
+				text-align: center;
+				width: 100vw;
+				text-align: center;
+			}
+			
+			#name {
+				position: absolute;
+				width: 46vw;
+				left: 5%;
+				top: 25%;
+				font-size: 1.1rem;
+			}
+			
+			#name>li {
+				border-bottom: 2px dashed black;
+				line-height: 5vh;
+				list-style: none;
+				
+			}
+			
+			#photo>img {
+				position: absolute;
+				right: 10%;
+				top: 20%;
+				width: 25vw;
+			}
+			
+			#information {
+				position: absolute;
+				top: 15%;
+				left: 0%;
+			}
+			#job{
+				position: absolute;
+				width: 100vw;
+				top: 85%;
+			}
+			#lanoukeji{
+				position: absolute;
+				left: 12%;
+				top: 4vh;
+			}
+			#wensihaihui{
+				position: absolute;
+				left: 12%;
+				top: 8vh;
+			}
+			#hobby{
+				position: absolute;
+				right: 10%;
+				top: 55%;
+				width: 25vw;
+				color: darkseagreen;
+			}
+			#p1{
+				margin-top: 10%;
+				margin-left: 10%;
+			}
