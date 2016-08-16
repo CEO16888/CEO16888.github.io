@@ -24,7 +24,7 @@
 			#personal {
 				position: absolute;
 				top: 3%;
-				font-size: 2rem;
+				/*font-size: 2rem;*/
 				text-align: center;
 				width: 100vw;
 				text-align: center;
@@ -35,7 +35,7 @@
 				width: 46vw;
 				left: 5%;
 				top: 25%;
-				font-size: 1.1rem;
+				/*font-size: 1.1rem;*/
 			}
 			
 			#name>li {
